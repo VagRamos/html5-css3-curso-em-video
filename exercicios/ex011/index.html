@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <title>Exercício 011</title>
+</head>
+<body>
+    <h1>Mídias em HTML5</h1>
+
+    <hr>
+    <h2>Imagem dinâmica</h2>
+    <p>Utilizando imagens dinâmicas visando uma boa usabilidade para o(a) usuário(a).</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="img/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="img/foto-m.png" type="image/png">
+        <img src="img/foto-g.png" alt="imagem grande">
+    </picture>
+    
+    <hr>
+    <h2>Reproduzindo Áudios</h2>
+    <p>Reprodução de mídias de áudio no HTML5</p>
+    <p>Breu - Stress</p>
+    <audio preload="metadata" controls autoplay>
+        <source src="midia/breu-stress.mp3" type="audio/mp3">
+        <p>Seu navegador não está reproduzindo o áudio
+            <a href="midia/breu-stress.mp3">Clique aqui para baixar o arquivo.</a>
+        </p>
+    </audio>
+
+    <p>Cambadacast -  Tempestade Solar</p>
+    <audio preload="metadata" controls>
+        <source src="midia/cambadacast-tempestade-solar.mp3" type="audio/mp3">
+        <p>Seu navegador não está reproduzindo o áudio
+            <a href="midia/cambadacast-tempestade-solar.mp3">Clique aqui para baixar o arquivo.</a>
+        </p>
+    </audio>
+
+</body>
+</html>
